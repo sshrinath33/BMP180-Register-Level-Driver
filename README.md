@@ -281,10 +281,7 @@ One of the biggest lessons from this project was learning that persistence is of
 
 * Convert the driver into a reusable AVR library
 * Add altitude calculation
-* Add sea-level pressure compensation
-* Improve error handling
-* Support multiple AVR microcontrollers
-* Create a generic TWI driver abstraction layer
+
 
 ---
 
