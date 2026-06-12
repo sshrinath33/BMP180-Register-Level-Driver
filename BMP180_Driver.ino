@@ -1,7 +1,7 @@
 int diagnosis = 1;
 int raw_temp = 1;
 int raw_pressure = 1;
-int temp_delay = 26;
+int pressure_delay = 26;
 int OSS = 2;
 long B5;
 uint16_t oss = 0x80;  
@@ -467,7 +467,7 @@ void TWI()
   pressure_reading_write();
   STOP();
 
-  delay(temp_delay);
+  delay(pressure_delay);
   Re_START();
   SLA_W_repeated();
   control_reg_write_repeated();
